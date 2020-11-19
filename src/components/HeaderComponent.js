@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
-    Button, Modal, ModalHeader, ModalBody,
+    Button, Modal, ModalHeader,ModalFooter, ModalBody,
     Form, FormGroup, Input, Label } from 'reactstrap';
     import { NavLink } from 'react-router-dom';
 
@@ -8,17 +8,20 @@ class Header extends Component {
     constructor(props) {
         super(props);
          this.state = {
+            modal:false,
             isNavOpen: false,
             isModalOpen: false
         };
-            
+            this.toggle = this.toggle.bind(this);
         this.toggleNav = this.toggleNav.bind(this);
          this.toggleModal = this.toggleModal.bind(this);
 
                 this.handleLogin = this.handleLogin.bind(this);
 
       }
-
+toggle() {
+        this.setState({modal: !this.state.modal});
+    }
       toggleNav() {
         this.setState({
           isNavOpen: !this.state.isNavOpen
@@ -77,7 +80,7 @@ class Header extends Component {
                                 <h3>Transcending Reality</h3>
                                 <p>MyMLH is an API that enables hackers to easily share  and manage their data in one click
                                 </p>
-                            <Button className="btn btn-yellow raleway shadow">Register Here <i className="fa fa-arrow-circle-right"></i></Button>
+                            <Button onClick={ this.toggle} className="btn btn-yellow raleway shadow">Register Here <i className="fa fa-arrow-circle-right"></i></Button>
                             </div>
                             <div className="col-12 col-sm-6 text-center">
                                  <img className="img-fluid w-75 w-lg-50" src="assets/images/hack-vector.png" alt="hack-vector"/>
@@ -89,30 +92,44 @@ class Header extends Component {
                     <img className="img-fluid" src="assets/images/bottom-abstract.png" alt="bottom-abstract"/>
 
                 </Jumbotron>
-                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-                    <ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
+               <Modal isOpen={this.state.modal} fade={true}
+                       toggle={this.toggle} >
+                    <ModalHeader className="bg-grey-dark text-center" toggle={this.toggle}>
+                        <h3 className="h-center raleway yellow text-center">REGISTER</h3>
+                    </ModalHeader>
                     <ModalBody>
-                     <Form onSubmit={this.handleLogin}>
-                            <FormGroup>
-                                <Label htmlFor="username">Username</Label>
-                                <Input type="text" id="username" name="username"
-                                    innerRef={(input) => this.username = input} />
-                            </FormGroup>
-                            <FormGroup>
-                                <Label htmlFor="password">Password</Label>
-                                <Input type="password" id="password" name="password"
-                                    innerRef={(input) => this.password = input}  />
-                            </FormGroup>
-                            <FormGroup check>
-                                <Label check>
-                                    <Input type="checkbox" name="remember"
-                                    innerRef={(input) => this.remember = input}  />
-                                    Remember me
-                                </Label>
-                            </FormGroup>
-                            <Button type="submit" value="submit" color="primary">Login</Button>
-                        </Form>
+                      <form className="hh-form">
+        
+        <div className="form-group row mb-5 hh-row">
+          <div className="col-2 col-sm-1 icon-col"><i className="v-center fa fa-lg fa-user prefix grey-text "></i></div>
+          <div className="col-10 col-sm-11 "> 
+          <input placeholder="Enter Your Name" type="text" id="orangeForm-name" className="form-control validate"/>
+          </div>
+          
+        </div>
+        <div className="form-group row mb-5 hh-row">
+          <div className="col-2 col-sm-1 icon-col"><i className="v-center fa fa-lg fa-envelope prefix grey-text "></i></div>
+          <div className="col-10 col-sm-11 "> <input placeholder="Enter Email Address" type="email" id="orangeForm-name" className="form-control validate "/>
+          </div>
+          
+        </div>
+        <div className="form-group row mb-5 hh-row">
+          <div className="col-2 col-sm-1 icon-col"><i className="fa fa-lg fa-lock prefix grey-text "></i></div>
+          <div className=" col-10 col-sm-11"> <input placeholder="Enter Password" type="password" id="orangeForm-name" className="form-control validate"/>
+          </div>
+          
+        </div>
+        <div className="text-center mt-4">
+          <Button className="btn btn-yellow-alt raleway shadow w-100 rounded-pill">Login <i className="fa fa-sign-in-alt"></i></Button>
+        </div>
+      </form>
                     </ModalBody>
+                    <ModalFooter>
+                        <Button onClick={this.toggle}>
+                            Do Something
+                        </Button>{' '}
+                        <Button onClick={this.toggle}>Cancel</Button>
+                    </ModalFooter>
                 </Modal>
             </div>
         );
