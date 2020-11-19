@@ -114,7 +114,7 @@ toggle() {
           
         </div>
         <div className="form-group row mb-5 hh-row">
-          <div className="col-2 col-sm-1 icon-col"><i className="fa fa-lg fa-lock prefix grey-text "></i></div>
+          <div className="col-2 col-sm-1 icon-col"><i className="v-center fa fa-lg fa-lock prefix grey-text "></i></div>
           <div className=" col-10 col-sm-11"> <input placeholder="Enter Password" type="password" id="orangeForm-name" className="form-control validate"/>
           </div>
           
@@ -124,12 +124,6 @@ toggle() {
         </div>
       </form>
                     </ModalBody>
-                    <ModalFooter>
-                        <Button onClick={this.toggle}>
-                            Do Something
-                        </Button>{' '}
-                        <Button onClick={this.toggle}>Cancel</Button>
-                    </ModalFooter>
                 </Modal>
             </div>
         );
