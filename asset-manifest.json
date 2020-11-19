@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/humble-hacks/static/css/main.7b59ecde.chunk.css",
+    "main.js": "/humble-hacks/static/js/main.9914cdcd.chunk.js",
+    "main.js.map": "/humble-hacks/static/js/main.9914cdcd.chunk.js.map",
+    "runtime-main.js": "/humble-hacks/static/js/runtime-main.19d44279.js",
+    "runtime-main.js.map": "/humble-hacks/static/js/runtime-main.19d44279.js.map",
+    "static/js/2.4916751b.chunk.js": "/humble-hacks/static/js/2.4916751b.chunk.js",
+    "static/js/2.4916751b.chunk.js.map": "/humble-hacks/static/js/2.4916751b.chunk.js.map",
+    "static/js/3.ee142186.chunk.js": "/humble-hacks/static/js/3.ee142186.chunk.js",
+    "static/js/3.ee142186.chunk.js.map": "/humble-hacks/static/js/3.ee142186.chunk.js.map",
+    "index.html": "/humble-hacks/index.html",
+    "static/css/main.7b59ecde.chunk.css.map": "/humble-hacks/static/css/main.7b59ecde.chunk.css.map",
+    "static/js/2.4916751b.chunk.js.LICENSE.txt": "/humble-hacks/static/js/2.4916751b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19d44279.js",
+    "static/js/2.4916751b.chunk.js",
+    "static/css/main.7b59ecde.chunk.css",
+    "static/js/main.9914cdcd.chunk.js"
+  ]
+}
