@@ -80,13 +80,13 @@ class Header extends Component {
                             <Button className="btn btn-yellow raleway shadow">Register Here <i className="fa fa-arrow-circle-right"></i></Button>
                             </div>
                             <div className="col-12 col-sm-6 text-center">
-                                 <img className="img-fluid w-75 w-lg-50" src="http://localhost:3001/images/hack-vector.png" alt="hack-vector"/>
+                                 <img className="img-fluid w-75 w-lg-50" src="assets/images/hack-vector.png" alt="hack-vector"/>
 
                             </div>
                         </div>
                         
                     </div>
-                    <img className="img-fluid" src="http://localhost:3001/images/bottom-abstract.png" alt="bottom-abstract"/>
+                    <img className="img-fluid" src="assets/images/bottom-abstract.png" alt="bottom-abstract"/>
 
                 </Jumbotron>
                 <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
