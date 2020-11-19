@@ -23,8 +23,8 @@ class Main extends Component {
            <TransitionGroup>
             <CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
               <Switch location={this.props.location}>
-                  <Route path='/home' component={() => <Home />} />
-                  <Redirect to="/home" />
+                  <Route path='/humble-hacks' component={() => <Home />} />
+                  <Redirect to="/humble-hacks" />
               </Switch>
             </CSSTransition>
           </TransitionGroup>
