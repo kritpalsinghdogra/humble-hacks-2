@@ -46,7 +46,7 @@ toggle() {
                 <Navbar className="fixed-top shadow" dark expand="md">
                     <div className="container-fluid">
                         
-                        <NavbarBrand className=" d-md-none" href="/"><img className="logo" src='/assets/images/hack-logo.png' height="80" width="80" alt='Humble-Hacks' /></NavbarBrand>
+                        <NavbarBrand className=" d-md-none" href="/"><img className="logo" src='assets/images/hack-logo.png' height="80" width="80" alt='Humble-Hacks' /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} className="ml-auto"/>
                         <Collapse isOpen={this.state.isNavOpen} navbar className="justify-content-between text-center">
                             <Nav navbar className="ml-auto">
@@ -83,13 +83,13 @@ toggle() {
                             <Button onClick={ this.toggle} className="btn btn-yellow raleway shadow">Register Here <i className="fa fa-arrow-circle-right"></i></Button>
                             </div>
                             <div className="col-12 col-sm-6 text-center">
-                                 <img className="img-fluid w-75 w-lg-50" src="/assets/images/hack-vector.png" alt="hack-vector"/>
+                                 <img className="img-fluid w-75 w-lg-50" src="assets/images/hack-vector.png" alt="hack-vector"/>
 
                             </div>
                         </div>
                         
                     </div>
-                    <img className="img-fluid" src="/assets/images/bottom-abstract.png" alt="bottom-abstract"/>
+                    <img className="img-fluid" src="assets/images/bottom-abstract.png" alt="bottom-abstract"/>
 
                 </Jumbotron>
                <Modal isOpen={this.state.modal} fade={true}
