@@ -4,6 +4,8 @@ import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
     Form, FormGroup, Input, Label } from 'reactstrap';
     import { NavLink } from 'react-router-dom';
 
+import {registerUrl} from './shared/mymlh';
+
 class Header extends Component {
     constructor(props) {
         super(props);
@@ -80,7 +82,7 @@ toggle() {
                                 <h3>Transcending Reality</h3>
                                 <p>MyMLH is an API that enables hackers to easily share  and manage their data in one click
                                 </p>
-                            <Button onClick={ this.toggle} className="btn btn-yellow raleway shadow">Register Here <i className="fa fa-arrow-circle-right"></i></Button>
+                            <a href={registerUrl} className="btn btn-yellow raleway shadow">Register Here <i className="fa fa-arrow-circle-right"></i></a>
                             </div>
                             <div className="col-12 col-sm-6 text-center">
                                  <img className="img-fluid w-75 w-lg-50" src="assets/images/hack-vector.png" alt="hack-vector"/>

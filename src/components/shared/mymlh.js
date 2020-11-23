@@ -1,0 +1,1 @@
+export const registerUrl = 'https://my.mlh.io/oauth/authorize?client_id=Iugz7mpeBuZTZNobLMQ_tM7IwBaaVkCz-DPuhKEE91M&redirect_uri=https://ankit96211.github.io/humble-hacks&response_type=code';
